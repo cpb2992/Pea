@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "pea.",
+    "slug": "pea-family",
+    "scheme": "pea",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FCFAF6",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.christopherbarnes.pea",
+      "buildNumber": "2",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.christopherbarnes.pea",
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F3F7EE"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "experiments": {
+      "reactCompiler": false
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#52785D"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "description": "A gentle family planner made with love. Meals, school routines, tasks, me-time favorites and private personal check-ins."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "pea-family-app",
+  "version": "1.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "ios": "expo start --ios",
+    "android": "expo start --android",
+    "check": "tsc --noEmit",
+    "doctor": "expo-doctor",
+    "build:android:test": "eas build --platform android --profile preview",
+    "build:ios:test": "eas build --platform ios --profile preview",
+    "build:stores": "eas build --platform all --profile production",
+    "submit:android": "eas submit --platform android --latest",
+    "submit:ios": "eas submit --platform ios --latest",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "dependencies": {
+    "expo": "~58.0.19",
+    "react": "19.3.0",
+    "react-native": "0.88.0",
+    "@expo/vector-icons": "^15.0.3",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "react-native-safe-area-context": "~5.10.1",
+    "expo-notifications": "~58.0.3",
+    "expo-secure-store": "~58.0.2"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.0",
+    "@types/react": "~19.3.0"
+  }
+}
